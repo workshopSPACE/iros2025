@@ -1,31 +1,33 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
-    color: #333;
-    line-height: 1.6;
+    background: linear-gradient(to bottom, #f4f7fa, #e8ecf1);
+    color: #2c3e50;
 }
 
 header {
-    background: linear-gradient(135deg, #0073e6, #005bb5);
+    background: linear-gradient(135deg, #5a91e6, #3e6edb);
     color: white;
     text-align: center;
-    padding: 60px 20px;
+    padding: 80px 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
 header h1 {
-    font-size: 2.8em;
+    font-size: 3em;
     margin-bottom: 10px;
 }
 
 header p {
-    font-size: 1.2em;
+    font-size: 1.3em;
+    max-width: 700px;
+    margin: 0 auto;
 }
 
 nav {
     background: white;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -36,42 +38,53 @@ nav ul {
     justify-content: center;
     list-style: none;
     margin: 0;
-    padding: 10px;
+    padding: 12px 0;
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #0073e6;
-    font-weight: bold;
+    color: #3e6edb;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+
+nav ul li a:hover {
+    color: #2c3e50;
 }
 
 section {
     max-width: 1000px;
-    margin: 40px auto;
-    padding: 20px;
+    margin: 60px auto;
+    padding: 30px;
     background: white;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 14px;
+    box-shadow: 0 0 18px rgba(0,0,0,0.07);
 }
 
 section h2 {
-    color: #005bb5;
+    color: #3e6edb;
     margin-top: 0;
+    font-size: 1.8em;
+}
+
+ul li {
+    margin-bottom: 8px;
 }
 
 footer {
-    background: #eee;
+    background: #dfe6ee;
     text-align: center;
     padding: 20px;
     font-size: 0.9em;
+    color: #555;
 }
 
 a {
-    color: #0073e6;
+    color: #3e6edb;
     text-decoration: none;
 }
 
