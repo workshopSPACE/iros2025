@@ -3,32 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Workshop 2025</title>
+    <title>SPACE Workshop @ IROS 2025</title>
     <link rel="stylesheet" href="styles.css">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f9f9f9;
             color: #333;
+            line-height: 1.6;
         }
         header {
-            background-color: #0073e6;
+            background: linear-gradient(135deg, #0073e6, #005bb5);
             color: white;
             text-align: center;
-            padding: 20px;
+            padding: 60px 20px;
+        }
+        header h1 {
+            font-size: 2.8em;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 1.2em;
+        }
+        nav {
+            background: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin: 0;
+            padding: 10px;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #0073e6;
+            font-weight: bold;
         }
         section {
-            max-width: 800px;
-            margin: 20px auto;
-            background: white;
+            max-width: 1000px;
+            margin: 40px auto;
             padding: 20px;
+            background: white;
             border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
         }
-        h2 {
-            color: #0073e6;
+        section h2 {
+            color: #005bb5;
+            margin-top: 0;
+        }
+        footer {
+            background: #eee;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
         }
         a {
             color: #0073e6;
@@ -41,27 +78,70 @@
 </head>
 <body>
     <header>
-        <h1>Workshop IROS 2025</h1>
-        <p>SPACE - Semantic Planning of robotic Agents in Collaborative Environments</p>
+        <h1>SPACE Workshop @ IROS 2025</h1>
+        <p>Semantic Planning of robotic Agents in Collaborative Environments</p>
     </header>
-    
-    <section id="schedule">
-        <h2>Schedule</h2>
+
+    <nav>
         <ul>
-            <li>08:30 - Welcome and introduction</li>
-            <li>08:45 - Session 1</li>
-            <li>09:45 - Interactive session</li>
-            <li>10:30 - Coffee break</li>
-            <li>10:45 - Session 2</li>
-            <li>11:15 - Session 3</li>
-            <li>12:15 - Closing remarks</li>
-            <li>12:30 - Lunch break</li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#organizers">Organizers</a></li>
+            <li><a href="#program">Program</a></li>
+            <li><a href="#speakers">Speakers</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h2>About</h2>
+        <p>
+            In recent years, Large Language Models (LLMs) have revolutionized fields like information retrieval and robotics. This workshop explores the role of LLMs in collaborative physical interaction scenarios with robots, bridging natural language understanding and real-world action planning. Key themes include human modeling, benchmarking, personalization, safety, and social perception.
+        </p>
+    </section>
+
+    <section id="organizers">
+        <h2>Organizers</h2>
+        <ul>
+            <li><strong>Carmela Calabrese</strong> — <a href="https://www.iit.it/it/people-details/-/people/carmela-calabrese">IIT</a>, <a href="mailto:carmela.calabrese@iit.it">email</a></li>
+            <li><strong>Lorenzo Natale</strong> — <a href="https://www.iit.it/it/people-details/-/people/lorenzo-natale">IIT</a>, <a href="mailto:lorenzo.natale@iit.it">email</a></li>
+            <li><strong>Michael Gienger</strong> — <a href="https://www.honda-ri.de/people/">Honda Research Institute Europe</a></li>
+            <li><strong>Katherine Driggs-Campbell</strong> — <a href="https://krdc.web.illinois.edu/">University of Illinois</a></li>
         </ul>
     </section>
-    
+
+    <section id="program">
+        <h2>Program</h2>
+        <p><em>All times are in local IROS 2025 timezone (tentative schedule)</em></p>
+        <ul>
+            <li>08:30 – Introduction</li>
+            <li>08:45 – LLM4planning as controlling approaches (Roveri & Choudhury)</li>
+            <li>09:45 – Poster & Demo Session</li>
+            <li>10:30 – Coffee Break</li>
+            <li>10:45 – Human modeling in HRI (Zhang)</li>
+            <li>11:15 – Benchmarking & Experimental Design (Bonsignorio & Wu)</li>
+            <li>12:15 – Wrap-up and Closing</li>
+        </ul>
+    </section>
+
+    <section id="speakers">
+        <h2>Invited Speakers</h2>
+        <ul>
+            <li><strong>Marco Roveri</strong> — University of Trento</li>
+            <li><strong>Sanjiban Choudhury</strong> — Cornell University</li>
+            <li><strong>Shiqi Zhang</strong> — SUNY Binghamton</li>
+            <li><strong>Fabio Bonsignorio</strong> — Sant'Anna School of Advanced Studies</li>
+            <li><strong>Jiajun Wu</strong> — Stanford University</li>
+        </ul>
+    </section>
+
     <section id="contact">
         <h2>Contact</h2>
-        <p>Email: <a href="mailto:workshop_space@outlook.com">workshop_space@outlook.com</a></p>
+        <p>Email the organizing team: <a href="mailto:carmela.calabrese@iit.it">carmela.calabrese@iit.it</a></p>
+        <p>Website: <a href="https://workshopspace.github.io/iros2025/">workshopspace.github.io/iros2025/</a></p>
     </section>
+
+    <footer>
+        <p>&copy; 2025 SPACE Workshop @ IROS. All rights reserved.</p>
+    </footer>
 </body>
 </html>
