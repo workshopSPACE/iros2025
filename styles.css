@@ -182,12 +182,27 @@ tbody tr:hover {
   text-align: center;
 }
 
-.header-image {
-  max-width: 300px;
-  height: auto;
-  margin-bottom: 15px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+header.header-bg {
+  position: relative;
+  background-image: url('images/robot-collab.png');
+  background-size: cover;       /* L’immagine copre tutto l’header */
+  background-position: center;  /* Centra l’immagine */
+  background-repeat: no-repeat; /* Evita ripetizioni */
+  color: white;                 /* Testo bianco per contrasto */
+  padding: 60px 20px;           /* Spaziatura interna */
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3); /* Ombra per migliorare leggibilità */
 }
 
+header.header-bg::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 0;
+}
+
+header.header-bg > * {
+  position: relative;
+  z-index: 1;
+}
