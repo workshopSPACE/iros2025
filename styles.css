@@ -108,6 +108,7 @@ footer {
 .card p {
   padding: 0 15px 15px 15px;
   font-size: 0.9em;
+  text-align: center;
 }
 
 .card button {
