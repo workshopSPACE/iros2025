@@ -69,12 +69,15 @@ footer {
   color: #555;
 }
 
+/* Updated .speakers-grid for responsiveness and centering */
 .speakers-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* responsive columns */
   gap: 20px;
-  justify-content: center;
-  margin-top: 40px;
+  max-width: 1000px;       /* max width to match main */
+  margin: 40px auto 0 auto; /* center horizontally with margin top */
+  padding: 0 10px;          /* optional padding for small screens */
+  justify-content: center;  /* keeps grid items centered */
 }
 
 .card {
@@ -85,11 +88,16 @@ footer {
   border-radius: 10px;
   background: white;
   overflow: hidden;
+  margin: 0 auto; /* center cards inside grid cells */
 }
 
 .card img {
   width: 100%;
   height: auto;
+  border-radius: 50%; /* optional: make images circular if square */
+  max-width: 150px;
+  margin: 15px auto 10px auto;
+  display: block;
 }
 
 .title {
@@ -99,7 +107,7 @@ footer {
 }
 
 .card p {
-  padding: 0 15px;
+  padding: 0 15px 15px 15px;
   font-size: 0.9em;
 }
 
