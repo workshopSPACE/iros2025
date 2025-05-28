@@ -166,3 +166,20 @@ tbody tr:hover {
   text-decoration: underline;
 }
 
+.card {
+  text-align: center;
+}
+
+.card h3 {
+  text-align: center;
+}
+
+.card p {
+  text-align: center;
+}
+
+.title {
+  text-align: center;
+}
+
+
