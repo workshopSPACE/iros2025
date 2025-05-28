@@ -183,16 +183,16 @@ tbody tr:hover {
 }
 
 header.header-bg {
-  position: relative;
-  background-image: url('images/robot-collab.jpg');
-  background-size: cover;       /* L’immagine copre tutto l’header */
-  background-position: center;  /* Centra l’immagine */
-  background-repeat: no-repeat; /* Evita ripetizioni */
-  color: white;                 /* Testo bianco per contrasto */
-  padding: 60px 20px;           /* Spaziatura interna */
+  background-image: url('images/robot-collab.png');
+  background-color: blue; /* così vedi se almeno il colore compare */
+  background-size: cover;
+  background-position: center;
+  padding: 60px 20px;
+  color: white;
   text-align: center;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3); /* Ombra per migliorare leggibilità */
+  position: relative;
 }
+
 
 header.header-bg::before {
   content: "";
