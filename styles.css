@@ -182,4 +182,12 @@ tbody tr:hover {
   text-align: center;
 }
 
+.header-image {
+  max-width: 300px;
+  height: auto;
+  margin-bottom: 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
