@@ -91,13 +91,14 @@ footer {
 }
 
 .card img {
-  width: 100%;
-  height: auto;
-  border-radius: 50%; /* optional: make images circular if square */
-  max-width: 150px;
-  margin: 15px auto 10px auto;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
   display: block;
+  margin: 15px auto 10px auto;
 }
+
 
 .title {
   color: grey;
