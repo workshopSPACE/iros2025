@@ -95,6 +95,7 @@ footer {
   height: 150px;
   border-radius: 50%;
   object-fit: cover;
+  object-position: center 60%;
   display: block;
   margin: 15px auto 10px auto;
 }
