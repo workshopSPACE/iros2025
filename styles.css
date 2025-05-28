@@ -183,14 +183,16 @@ tbody tr:hover {
 }
 
 header.header-bg {
+  position: relative; /* importantissimo per overlay */
   background-image: url('images/robot-collab.png');
-  background-color: blue; /* così vedi se almeno il colore compare */
   background-size: cover;
   background-position: center 70%;
-  padding: 60px 20px;
+  background-repeat: no-repeat;
   color: white;
+  padding: 60px 20px;
   text-align: center;
-  position: relative;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  overflow: hidden; /* per sicurezza */
 }
 
 
