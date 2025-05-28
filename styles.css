@@ -57,6 +57,10 @@ main {
   padding: 0 20px;
 }
 
+main section p {
+  text-align: center;
+}
+
 footer {
   background: #dfe6ee;
   text-align: center;
