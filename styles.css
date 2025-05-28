@@ -183,14 +183,17 @@ tbody tr:hover {
 }
 
 header.header-bg {
-  background-image: url('images/robot-collab.png');
-  background-color: blue; /* così vedi se almeno il colore compare */
-  background-size: cover;
-  background-position: center 70%;
-  padding: 60px 20px;
-  color: white;
-  text-align: center;
   position: relative;
+  background-image: url('images/robot-collab.png');
+  background-color: blue; /* fallback color */
+  background-size: cover;
+  background-position: center 70%; /* tweak to show better area */
+  background-repeat: no-repeat;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  overflow: hidden;
 }
 
 
