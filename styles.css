@@ -186,7 +186,7 @@ header.header-bg {
   background-image: url('images/robot-collab.png');
   background-color: blue; /* così vedi se almeno il colore compare */
   background-size: cover;
-  background-position: center;
+  background-position: center 70%;
   padding: 60px 20px;
   color: white;
   text-align: center;
