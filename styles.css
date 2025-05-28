@@ -74,14 +74,14 @@ footer {
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
   max-width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 40px auto; /* Centers the grid horizontally */
+  padding: 0 20px;   /* Adds padding to prevent content from touching edges */
+  justify-items: center; /* Centers items within each grid cell */
 }
 
 .card {
   max-width: 280px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto; /* Centers each card within its grid cell */
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   text-align: center;
   font-family: 'Inter', sans-serif;
