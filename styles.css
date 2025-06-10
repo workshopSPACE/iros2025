@@ -211,3 +211,48 @@ header.header-bg > * {
   position: relative;
   z-index: 1;
 }
+
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  header h1 {
+    font-size: 1.8em;
+  }
+
+  main {
+    padding: 0 15px;
+  }
+
+  .speaker-panel {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .speaker-panel img {
+    margin-bottom: 15px;
+  }
+
+  .speakers-grid {
+    grid-template-columns: 1fr;
+    padding: 0 10px;
+  }
+
+  .card {
+    max-width: 100%;
+  }
+
+  .card img {
+    width: 120px;
+    height: 120px;
+  }
+}
+
