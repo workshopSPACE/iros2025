@@ -252,11 +252,6 @@ header.header-bg > * {
     height: 120px;
   }
 
-  @media (max-width: 600px) {
-  .speakers-grid {
-    grid-template-columns: 1fr;
-  }
-}
-  
+
 }
 
