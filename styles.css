@@ -241,9 +241,11 @@ header.header-bg > * {
     margin-bottom: 15px;
   }
 
+  /* Use exact 2-col grid for speakers */
   .speakers-grid {
-    grid-template-columns: 1fr;
-    padding: 0 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
   }
 
   .card {
