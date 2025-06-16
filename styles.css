@@ -69,15 +69,6 @@ footer {
   color: #555;
 }
 
-.speakers-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
-  max-width: 1000px;
-  margin: 40px auto; /* Centers the grid horizontally */
-  padding: 0 20px;   /* Adds padding to prevent content from touching edges */
-  justify-items: center; /* Centers items within each grid cell */
-}
 
 .card {
   max-width: 280px;
