@@ -234,13 +234,12 @@ header.header-bg > * {
 
   .speakers-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    max-width: 700px;
+    grid-template-columns: repeat(2, 300px);
+    justify-content: center;
+    gap: 30px;
     margin: 40px auto;
-    padding: 0 20px;
-    justify-items: center;
   }
+
 
 
   .card {
