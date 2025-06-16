@@ -69,10 +69,18 @@ footer {
   color: #555;
 }
 
+.speakers-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  max-width: 800px;
+  margin: 40px auto;
+  justify-items: center;
+}
 
 .card {
   max-width: 280px;
-  margin: 0 auto; /* Centers each card within its grid cell */
+  margin: 0 auto;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   text-align: center;
   font-family: 'Inter', sans-serif;
@@ -86,16 +94,16 @@ footer {
   height: 150px;
   border-radius: 50%;
   object-fit: cover;
-  object-position: center 80%;
+  object-position: center;
   display: block;
   margin: 15px auto 10px auto;
 }
-
 
 .title {
   color: grey;
   font-size: 0.95em;
   margin: 0;
+  text-align: center;
 }
 
 .card p {
@@ -159,28 +167,12 @@ tbody tr:hover {
   text-decoration: underline;
 }
 
-.card {
-  text-align: center;
-}
-
-.card h3 {
-  text-align: center;
-}
-
-.card p {
-  text-align: center;
-}
-
-.title {
-  text-align: center;
-}
-
 header.header-bg {
   position: relative;
   background-image: url('images/robot-collab.png');
-  background-color: blue; /* fallback color */
+  background-color: blue;
   background-size: cover;
-  background-position: center 70%; /* tweak to show better area */
+  background-position: center 70%;
   background-repeat: no-repeat;
   color: white;
   padding: 60px 20px;
@@ -188,7 +180,6 @@ header.header-bg {
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
   overflow: hidden;
 }
-
 
 header.header-bg::before {
   content: "";
@@ -202,7 +193,6 @@ header.header-bg > * {
   position: relative;
   z-index: 1;
 }
-
 
 @media (max-width: 768px) {
   nav ul {
@@ -233,14 +223,8 @@ header.header-bg > * {
   }
 
   .speakers-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 300px);
-    justify-content: center;
-    gap: 30px;
-    margin: 40px auto;
+    grid-template-columns: 1fr;
   }
-
-
 
   .card {
     max-width: 100%;
@@ -250,7 +234,4 @@ header.header-bg > * {
     width: 120px;
     height: 120px;
   }
-
-
 }
-
