@@ -12,14 +12,18 @@ html, body {
   padding: 0;
 }
 
-.site-wrapper {
+.layout {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
 main {
-  flex: 1;
+  flex: 1 0 auto; /* grow if needed, do not shrink */
+}
+
+footer {
+  flex-shrink: 0;
 }
 
 header {
