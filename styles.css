@@ -6,6 +6,14 @@ body {
   color: #2c3e50;
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+
 header {
   background: linear-gradient(135deg, #5a91e6, #3e6edb);
   color: white;
@@ -56,6 +64,7 @@ main {
   max-width: 1000px;
   margin: 40px auto;
   padding: 0 20px;
+  flex: 1;
 }
 
 main section p {
