@@ -93,24 +93,19 @@ footer {
 
 .speakers-grid {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   gap: 30px;
   margin: 40px auto;
-  max-width: 100%;
+  max-width: 1200px;   /* ⬅️ increase or remove this */
+  width: 100%;         /* use full available width */
   padding: 10px;
-  flex-wrap: nowrap;     /* keep in one row */
-  overflow-x: auto;      /* allow scroll if too narrow */
 }
 
 .card {
-  flex: 1 1 200px;       /* all cards grow/shrink equally */
-  max-width: 220px;      /* set a consistent max width */
-  min-width: 220px;      /* avoid shrinking too much */
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  text-align: center;
-  border-radius: 10px;
-  background: white;
+  flex: 1;             /* each card grows equally */
+  min-width: 0;        /* prevent overflow */
 }
+
 
 
 .card img {
@@ -259,5 +254,6 @@ header.header-bg > * {
     height: 120px;
   }
 }
+
 
 
