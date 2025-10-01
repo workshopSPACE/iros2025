@@ -93,26 +93,25 @@ footer {
 
 .speakers-grid {
   display: flex;
-  flex-wrap: nowrap;   /* keep them in one row */
-  justify-content: center; /* center the row */
-  gap: 30px;            /* space between cards */
+  justify-content: center;
+  gap: 30px;
   margin: 40px auto;
-  overflow-x: auto;     /* allows horizontal scroll if screen is too narrow */
   max-width: 100%;
   padding: 10px;
+  flex-wrap: nowrap;     /* keep in one row */
+  overflow-x: auto;      /* allow scroll if too narrow */
 }
-
 
 .card {
-  max-width: 280px;
-  margin: 0 auto;
+  flex: 1 1 200px;       /* all cards grow/shrink equally */
+  max-width: 220px;      /* set a consistent max width */
+  min-width: 220px;      /* avoid shrinking too much */
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   text-align: center;
-  font-family: 'Inter', sans-serif;
   border-radius: 10px;
   background: white;
-  overflow: hidden;
 }
+
 
 .card img {
   width: 150px;
@@ -260,4 +259,5 @@ header.header-bg > * {
     height: 120px;
   }
 }
+
 
